@@ -7,9 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- Add a title here -->
+    <title>Comparison</title>
 
     <!-- Boostrap Stylesheet -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- Our own CSS stylesheet -->
     <link rel="stylesheet" href="assets/css/styles.css" media="screen">
@@ -18,9 +19,71 @@
 
   <body>
     <!-- Start of navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Weather Data</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="comparison.html">Comparison</a>
+              </li>
+              <li class="nav-item">
+                   <a class="nav-link" href="data.html">Data</a>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Plots
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="visualizations/cloudiness.html">Cloudiness</a>
+                  <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="visualizations/humidity.html">Humidity</a>
+                  <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="visualizations/temp.html">Max Temperature</a>
+                  <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="visualizations/wind.html">Wind</a>
+                  </div>
+              </li>
+          </ul>
+      </div>
+  </nav>
     <!-- End of navbar -->
 
     <!-- Start of container -->
+    <!-- Start of Visualizations imageNav Area -->
+    <div class="container">
+      <br><div class="jumbotron">  
+        <h1 style="text-align: center;" class="display-4">Comparison Of All Charts</h1>
+          <br><div class="row">
+            <div class="col-md-6">
+              <a href="visualizations/temp.html">
+              <button class="btn btn-default">
+                <img src="assets/images/Fig1.png" width="80%" />
+              </button></a></div>
+            <div class="col-md-6">
+              <a href="visualizations/humidity.html">
+                <button class="btn btn-default">
+                  <img src="assets/images/Fig2.png" width="80%" />
+                </button></a></div>
+            </div>
+            <br><div class="row">
+              <div class="col-md-6">
+                <a href="visualizations/cloudiness.html">
+                <button class="btn btn-default">
+                  <img src="assets/images/Fig3.png" width="80%" />
+                </button></a></div>
+              <div class="col-md-6">
+                <a href="visualizations/wind.html">
+                <button class="btn btn-default">
+                  <img src="assets/images/Fig4.png" width="80%" />
+                </button></a></div>
+            </div>
+          </div>
+        </div>
+    </div>  
     <!-- End of container -->
 
     <!-- jQuery CDN -->
